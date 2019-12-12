@@ -3,6 +3,7 @@ node{
      git 'https://github.com/Hanumeshjitta/Hanumesh.git'
    }
    stage('Compile-Pacjage'){
-     sh 'mvn package' 
+      def mvnHome= tool name: 'maven-3', type: 'maven'
+      sh "${mvnHome}/bin/mvn package"
    }
 }
