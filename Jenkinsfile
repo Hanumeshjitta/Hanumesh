@@ -18,7 +18,5 @@ node{
     //Email-Notification            
    stage('Email-Notification'){
      mail bcc: '', body: 'This is an email for your pipeline results.', cc: '', from: 'Jenkins', replyTo: '', subject: 'Jenkins Email Notification', to: 'cloudjitta@gmail.com'
-      
-   }
-   
-}
+     }
+  }
