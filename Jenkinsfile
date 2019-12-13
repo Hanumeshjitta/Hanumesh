@@ -1,5 +1,5 @@
 node{
-   // GIT Source
+   // GIT Source SCM
    stage('SCM Checkout') {
      git 'https://github.com/Hanumeshjitta/Hanumesh.git'
    }
