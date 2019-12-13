@@ -1,6 +1,6 @@
 node{
    // GIT Source
-   stage('SCM Checkout'){
+   stage('SCM Checkout') {
      git 'https://github.com/Hanumeshjitta/Hanumesh.git'
    }
    //MVN Compile-Pacjage
