@@ -2,8 +2,7 @@ pipeline{
     agent any
     stages{
         stage("Git Checkout"){
-         steps{
-             
+         steps{             
             git credentialsId: 'Jenkins-Credentails', url: 'https://github.com/Hanumeshjitta/Hanumesh.git'
             }
        }
