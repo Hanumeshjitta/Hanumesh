@@ -4,7 +4,7 @@ pipeline{
     PATH = "/opt/maven3/bin:$PATH"
     }    
     stages{
-        stage("Git Checkout"){
+        stage("Git Checkout") {
           steps{             
               git credentialsId: 'Jenkins-Credentails', url: 'https://github.com/Hanumeshjitta/Hanumesh.git'
             }
