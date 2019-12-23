@@ -1,11 +1,20 @@
 pipeline{
     agent any
+    envronment{
+    PATH = /opt/maven3/bin:$PATH:
+    }
+    
     stages{
         stage("Git Checkout"){
           steps{             
               git credentialsId: 'Jenkins-Credentails', url: 'https://github.com/Hanumeshjitta/Hanumesh.git'
             }
        }
-    }
+        stage("Maven Build"){
+          steps{             
+              sh "sh mvn clean package "
+            }
+       }
+     }
 }
 
